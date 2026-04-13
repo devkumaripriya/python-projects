@@ -1,0 +1,20 @@
+item1=input("Enter the item name: ")
+price=float(input("Enter the price of the item1: "))
+item2=input("Enter the item name: ")
+price2=float(input("Enter the price of the item2: "))
+item3=input("Enter the item name: ")
+price3=float(input("Enter the price of the item3: "))
+item4=input("Enter the item name: ")
+price4=float(input("Enter the price of the item4: "))
+dash=20-len(item1)-len(str(price))   #Twist and important part is to convert price into string because we are calculating the length of price and it is in float format so we need to convert it into string format to calculate the length of price and then we 
+                                       #can calculate the number of dashes we need to print between item name and price.   
+print(item1+(dash*'-')+str(price))
+print("No.of dashes is: ",dash)
+dash=20-len(item2)-len(str(price2))
+print(item2+(dash*'-')+str(price2))
+print("No.of dashes is: ",dash)
+dash=20-len(item3)-len(str(price3))
+print(item3+(dash*'-')+str(price3))
+dash=20-len(item4)-len(str(price4))
+print(item4+(dash*'-')+str(price4))
+
